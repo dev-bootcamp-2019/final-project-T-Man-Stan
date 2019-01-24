@@ -1,0 +1,13 @@
+before_install:
+  - chmod +x ./ci/install-deps.sh
+  - chmod +x ./ci/build.sh
+language: node_js
+node_js:
+- "lts/*"
+install: ./ci/install-deps.sh
+script: ./ci/build.sh
+after_script:
+  - npm run coverage && cat coverage/lcov.info | coveralls
+cache:
+  directories:
+    - node_modules

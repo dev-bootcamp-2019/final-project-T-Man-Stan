@@ -1,0 +1,19 @@
+//disables linter bug warnings
+
+{
+    "extends": "solium:all",
+    "plugins": [
+        "security"
+    ],
+    "rules": {
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "indentation": [
+            "error",
+            "tab"
+        ],
+		"arg-overflow": 0
+    }
+}
