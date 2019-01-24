@@ -1,0 +1,96 @@
+<div class="jumbotron jumbotron-fluid">
+	<div class="container text-center">
+		<h1 class="display-6">Admin Operations</h1>
+	</div>
+	<div id="accordion">
+		<div class="card text-center">
+			<div class="card-header" id="headingOne">
+				<h5 class="mb-0">
+					<button class="btn btn-outline-dark btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+					 (click)='getNextStoreRequest()'>
+						Next Store Request
+					</button>
+				</h5>
+			</div>
+
+			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				<div class="card-body">
+					<h5 class="card-title">Store Request</h5>
+					<form>
+						<div class="form-group">
+							<p>Hash: {{storeRequest.proposal}}</p>
+							<p>Owner: {{storeRequest.owner}}</p>
+						</div>
+						<a href="https://ipfs.io/ipfs/{{storeRequest.proposal}}" type="button" target="_blank" class="btn btn-outline-dark">Visit</a>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="card text-center">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-outline-dark btn-block" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+					 (click)='getNextStoreRequest()'>
+						Approve Next Store Request
+					</button>
+				</h5>
+			</div>
+
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<h5 class="card-title">Store Request</h5>
+					<form>
+						<div class="form-group">
+							<p>Hash: {{storeRequest.proposal}}</p>
+							<p>Owner: {{storeRequest.owner}}</p>
+						</div>
+						<p>
+							<label> Approve
+								<input type="radio" required value="1" name="isApproved" [(ngModel)]="approveStore.isApproved">
+							</label>
+							<label> Disapprove
+								<input type="radio" required value="0" name="isApproved" [(ngModel)]="approveStore.isApproved">
+							</label>
+						</p>
+						<div class="form-group">
+							<label>Index in stores array
+								<input required type="text" name="index" class="form-control" aria-describedby="index" placeholder="42" required [(ngModel)]='approveStore.index'>
+							</label>
+						</div>
+						<button type="button" class="btn btn-outline-dark" (click)="approveNextStore()">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="card text-center">
+			<div class="card-header" id="headingThree">
+				<h5 class="mb-0">
+					<button class="btn btn-outline-dark btn-block" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+					 aria-controls="collapseThree">
+						Revoke Store From Owner
+					</button>
+				</h5>
+			</div>
+
+			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				<div class="card-body">
+					<h5 class="card-title">Revoke</h5>
+					<form>
+						<div class="form-group">
+							<label>Owner address
+								<input required type="text" name="ownerAddress" class="form-control" aria-describedby="ownerAddress" placeholder="0x3feb52d3f473c384d3c39ef0a46a543dde5af50c"
+								 required [(ngModel)]='revokeStoreObject.ownerAddress'>
+							</label>
+						</div>
+						<div class="form-group">
+							<label>Index in stores array
+								<input required type="text" name="index" class="form-control" aria-describedby="index" placeholder="42" required [(ngModel)]='revokeStoreObject.index'>
+							</label>
+						</div>
+						<button type="button" class="btn btn-outline-danger" (click)="revokeStore()">Revoke!</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
