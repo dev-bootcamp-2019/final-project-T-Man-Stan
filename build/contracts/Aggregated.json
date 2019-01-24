@@ -1,0 +1,884 @@
+{
+  "contractName": "Aggregated",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_isApproved",
+          "type": "bool"
+        },
+        {
+          "name": "_indexInStoresArray",
+          "type": "uint16"
+        }
+      ],
+      "name": "approveStore",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x3888ac91"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "storeOwners",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x44d50993"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "stores",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x54121c74"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "getStoresByOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x544f2dc9"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "isStoreOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x5effd33c"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_proposal",
+          "type": "bytes32"
+        }
+      ],
+      "name": "requestStore",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x70ea43a3"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newImplementation",
+          "type": "address"
+        }
+      ],
+      "name": "upgradeImplementation",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x83f94db7"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8da5cb5b"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getStoreOwners",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x91f4245a"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_storeAddress",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawFromStore",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x982e9b2f"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_storeOwner",
+          "type": "address"
+        },
+        {
+          "name": "_storeIndex",
+          "type": "uint16"
+        }
+      ],
+      "name": "revokeStore",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x9ce15d16"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "contractImplementation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x9e72370b"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nextRequestIndex",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xba327627"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_storeOwner",
+          "type": "address"
+        },
+        {
+          "name": "_storeIndex",
+          "type": "uint16"
+        },
+        {
+          "name": "_newStoreOwner",
+          "type": "address"
+        },
+        {
+          "name": "_newOwnerStoreIndex",
+          "type": "uint16"
+        }
+      ],
+      "name": "transferStoreOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xcdc01ca3"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_recipient",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerWithdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xd9c88e14"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "init",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xe1c7392a"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MAX_OWNER_STORES",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xea02301d"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xf2fde38b"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "storeRequests",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xf7fb768a"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "requestIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogStoreRequested",
+      "type": "event",
+      "signature": "0xa58e21a7ae8abba58dc26d0ed7bf75d1ef1187a0425f9bc13967abb32ce2b735"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "requestIndex",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "store",
+          "type": "address"
+        }
+      ],
+      "name": "LogStoreApproved",
+      "type": "event",
+      "signature": "0x4be7aeadb5a587c0beb1e99498619ace054663b97b5232b670b228a1edd7deeb"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "store",
+          "type": "address"
+        }
+      ],
+      "name": "LogStoreRevoked",
+      "type": "event",
+      "signature": "0xacf9b268ec839b5c784d9f7e071b1ca310c2f573bf4e1cfae35c772a52732118"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "store",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogStoreWithdrawal",
+      "type": "event",
+      "signature": "0x7e4aee517bf5ac4f9b1645b9567c3ab474e95c5c84d48136335f61a9aa6e8753"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogOwnerWithdrawal",
+      "type": "event",
+      "signature": "0xa493e960de66ff5b6d1d6e19fc3fdeee4b4b5d01b686fde2dcc4b3354d27e97d"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "newImplementation",
+          "type": "address"
+        }
+      ],
+      "name": "LogUpgradedContract",
+      "type": "event",
+      "signature": "0x72f18507db1c0f4b7cc3585cbd362b7c00fa0f89316cb292a4293c23c221d152"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "LogOwnershipTransferred",
+      "type": "event",
+      "signature": "0xdb6d05f3295cede580affa301a1eb5297528f3b3f6a56b075887ce6f61c45f21"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.4.24;\n\nimport './ISharedStorage.sol';\nimport './INotInitedOwnable.sol';\nimport './IOwnableUpgradeableImplementation.sol';\nimport './IMarketplaceManager.sol';\nimport './IStoreManager.sol';\n\n\n/**\n * @title Aggregated\n * @dev Represents the aggregated abstraction\n * in the form of abstract contract\n * to communicate with the marketlace.\n */\n/* solium-disable-next-line no-empty-blocks */\ncontract Aggregated is ISharedStorage, INotInitedOwnable, IOwnableUpgradeableImplementation, IMarketplaceManager, IStoreManager {}\n",
+  "sourcePath": "C:/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/Aggregated.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/Aggregated.sol",
+    "exportedSymbols": {
+      "Aggregated": [
+        764
+      ]
+    },
+    "id": 765,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 748,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/ISharedStorage.sol",
+        "file": "./ISharedStorage.sol",
+        "id": 749,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 863,
+        "src": "25:30:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/INotInitedOwnable.sol",
+        "file": "./INotInitedOwnable.sol",
+        "id": 750,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 843,
+        "src": "56:33:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/IOwnableUpgradeableImplementation.sol",
+        "file": "./IOwnableUpgradeableImplementation.sol",
+        "id": 751,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 855,
+        "src": "90:49:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/IMarketplaceManager.sol",
+        "file": "./IMarketplaceManager.sol",
+        "id": 752,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 821,
+        "src": "140:35:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/IStoreManager.sol",
+        "file": "./IStoreManager.sol",
+        "id": 753,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 946,
+        "src": "176:29:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 754,
+              "name": "ISharedStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 862,
+              "src": "428:14:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ISharedStorage_$862",
+                "typeString": "contract ISharedStorage"
+              }
+            },
+            "id": 755,
+            "nodeType": "InheritanceSpecifier",
+            "src": "428:14:5"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 756,
+              "name": "INotInitedOwnable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 842,
+              "src": "444:17:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_INotInitedOwnable_$842",
+                "typeString": "contract INotInitedOwnable"
+              }
+            },
+            "id": 757,
+            "nodeType": "InheritanceSpecifier",
+            "src": "444:17:5"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 758,
+              "name": "IOwnableUpgradeableImplementation",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 854,
+              "src": "463:33:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IOwnableUpgradeableImplementation_$854",
+                "typeString": "contract IOwnableUpgradeableImplementation"
+              }
+            },
+            "id": 759,
+            "nodeType": "InheritanceSpecifier",
+            "src": "463:33:5"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 760,
+              "name": "IMarketplaceManager",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 820,
+              "src": "498:19:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IMarketplaceManager_$820",
+                "typeString": "contract IMarketplaceManager"
+              }
+            },
+            "id": 761,
+            "nodeType": "InheritanceSpecifier",
+            "src": "498:19:5"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 762,
+              "name": "IStoreManager",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 945,
+              "src": "519:13:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IStoreManager_$945",
+                "typeString": "contract IStoreManager"
+              }
+            },
+            "id": 763,
+            "nodeType": "InheritanceSpecifier",
+            "src": "519:13:5"
+          }
+        ],
+        "contractDependencies": [
+          820,
+          842,
+          854,
+          862,
+          945
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Aggregated\n@dev Represents the aggregated abstraction\nin the form of abstract contract\nto communicate with the marketlace.",
+        "fullyImplemented": false,
+        "id": 764,
+        "linearizedBaseContracts": [
+          764,
+          945,
+          820,
+          854,
+          842,
+          862
+        ],
+        "name": "Aggregated",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 765,
+        "src": "405:130:5"
+      }
+    ],
+    "src": "0:536:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/Aggregated.sol",
+    "exportedSymbols": {
+      "Aggregated": [
+        764
+      ]
+    },
+    "id": 765,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 748,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/ISharedStorage.sol",
+        "file": "./ISharedStorage.sol",
+        "id": 749,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 863,
+        "src": "25:30:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/INotInitedOwnable.sol",
+        "file": "./INotInitedOwnable.sol",
+        "id": 750,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 843,
+        "src": "56:33:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/IOwnableUpgradeableImplementation.sol",
+        "file": "./IOwnableUpgradeableImplementation.sol",
+        "id": 751,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 855,
+        "src": "90:49:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/IMarketplaceManager.sol",
+        "file": "./IMarketplaceManager.sol",
+        "id": 752,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 821,
+        "src": "140:35:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/IStoreManager.sol",
+        "file": "./IStoreManager.sol",
+        "id": 753,
+        "nodeType": "ImportDirective",
+        "scope": 765,
+        "sourceUnit": 946,
+        "src": "176:29:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 754,
+              "name": "ISharedStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 862,
+              "src": "428:14:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ISharedStorage_$862",
+                "typeString": "contract ISharedStorage"
+              }
+            },
+            "id": 755,
+            "nodeType": "InheritanceSpecifier",
+            "src": "428:14:5"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 756,
+              "name": "INotInitedOwnable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 842,
+              "src": "444:17:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_INotInitedOwnable_$842",
+                "typeString": "contract INotInitedOwnable"
+              }
+            },
+            "id": 757,
+            "nodeType": "InheritanceSpecifier",
+            "src": "444:17:5"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 758,
+              "name": "IOwnableUpgradeableImplementation",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 854,
+              "src": "463:33:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IOwnableUpgradeableImplementation_$854",
+                "typeString": "contract IOwnableUpgradeableImplementation"
+              }
+            },
+            "id": 759,
+            "nodeType": "InheritanceSpecifier",
+            "src": "463:33:5"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 760,
+              "name": "IMarketplaceManager",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 820,
+              "src": "498:19:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IMarketplaceManager_$820",
+                "typeString": "contract IMarketplaceManager"
+              }
+            },
+            "id": 761,
+            "nodeType": "InheritanceSpecifier",
+            "src": "498:19:5"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 762,
+              "name": "IStoreManager",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 945,
+              "src": "519:13:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IStoreManager_$945",
+                "typeString": "contract IStoreManager"
+              }
+            },
+            "id": 763,
+            "nodeType": "InheritanceSpecifier",
+            "src": "519:13:5"
+          }
+        ],
+        "contractDependencies": [
+          820,
+          842,
+          854,
+          862,
+          945
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Aggregated\n@dev Represents the aggregated abstraction\nin the form of abstract contract\nto communicate with the marketlace.",
+        "fullyImplemented": false,
+        "id": 764,
+        "linearizedBaseContracts": [
+          764,
+          945,
+          820,
+          854,
+          842,
+          862
+        ],
+        "name": "Aggregated",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 765,
+        "src": "405:130:5"
+      }
+    ],
+    "src": "0:536:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.0",
+  "updatedAt": "2019-01-24T18:27:00.822Z",
+  "devdoc": {
+    "methods": {},
+    "title": "Aggregated"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

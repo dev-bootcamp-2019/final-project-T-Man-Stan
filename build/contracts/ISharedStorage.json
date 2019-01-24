@@ -1,0 +1,231 @@
+{
+  "contractName": "ISharedStorage",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "contractImplementation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.4.24;\n\n\n/**\n * @title ISharedStorage\n * @dev Interface of the SharedStorage contract.\n */\ninterface ISharedStorage {\n    function contractImplementation() external view returns (address);\n}\n",
+  "sourcePath": "C:\\Users\\Trevor\\documents\\marketplace2\\Consensys-Marketplace-Final-Project-master\\contracts\\abstractions\\ISharedStorage.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/ISharedStorage.sol",
+    "exportedSymbols": {
+      "ISharedStorage": [
+        862
+      ]
+    },
+    "id": 863,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 856,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:9"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@title ISharedStorage\n@dev Interface of the SharedStorage contract.",
+        "fullyImplemented": false,
+        "id": 862,
+        "linearizedBaseContracts": [
+          862
+        ],
+        "name": "ISharedStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 861,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "contractImplementation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 857,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "170:2:9"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 860,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 859,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 861,
+                  "src": "196:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 858,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "196:7:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "195:9:9"
+            },
+            "scope": 862,
+            "src": "139:66:9",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 863,
+        "src": "108:99:9"
+      }
+    ],
+    "src": "0:208:9"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/abstractions/ISharedStorage.sol",
+    "exportedSymbols": {
+      "ISharedStorage": [
+        862
+      ]
+    },
+    "id": 863,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 856,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:9"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@title ISharedStorage\n@dev Interface of the SharedStorage contract.",
+        "fullyImplemented": false,
+        "id": 862,
+        "linearizedBaseContracts": [
+          862
+        ],
+        "name": "ISharedStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 861,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "contractImplementation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 857,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "170:2:9"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 860,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 859,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 861,
+                  "src": "196:7:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 858,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "196:7:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "195:9:9"
+            },
+            "scope": 862,
+            "src": "139:66:9",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 863,
+        "src": "108:99:9"
+      }
+    ],
+    "src": "0:208:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.0",
+  "updatedAt": "2019-01-24T18:58:43.091Z",
+  "devdoc": {
+    "methods": {},
+    "title": "ISharedStorage"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

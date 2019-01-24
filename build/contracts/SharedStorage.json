@@ -1,0 +1,171 @@
+{
+  "contractName": "SharedStorage",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "contractImplementation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060e98061001f6000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680639e72370b146044575b600080fd5b348015604f57600080fd5b5060566098565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058202bb33eae81177868b80e02bf32092a632968797eb29bb735382e11d1cfbf00600029",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680639e72370b146044575b600080fd5b348015604f57600080fd5b5060566098565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058202bb33eae81177868b80e02bf32092a632968797eb29bb735382e11d1cfbf00600029",
+  "sourceMap": "242:66:19:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;242:66:19;;;;;;;",
+  "deployedSourceMap": "242:66:19:-;;;;;;;;;;;;;;;;;;;;;;;;268:37;;8:9:-1;5:2;;;30:1;27;20:12;5:2;268:37:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity 0.4.24;\n\n\n/**\n * @title SharedStorage\n * @dev base contract holding address of the contract implementation\n * @notice ideas and concepts derived from https://medium.com/limechain/smart-contract-upgradeability-ee3d43dde96c\n */\ncontract SharedStorage {\n\taddress public contractImplementation;\n}\n",
+  "sourcePath": "C:\\Users\\Trevor\\documents\\marketplace2\\Consensys-Marketplace-Final-Project-master\\contracts\\upgrades\\SharedStorage.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/upgrades/SharedStorage.sol",
+    "exportedSymbols": {
+      "SharedStorage": [
+        1905
+      ]
+    },
+    "id": 1906,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1902,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:19"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title SharedStorage\n@dev base contract holding address of the contract implementation\n@notice ideas and concepts derived from https://medium.com/limechain/smart-contract-upgradeability-ee3d43dde96c",
+        "fullyImplemented": true,
+        "id": 1905,
+        "linearizedBaseContracts": [
+          1905
+        ],
+        "name": "SharedStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1904,
+            "name": "contractImplementation",
+            "nodeType": "VariableDeclaration",
+            "scope": 1905,
+            "src": "268:37:19",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1903,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "268:7:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1906,
+        "src": "242:66:19"
+      }
+    ],
+    "src": "0:309:19"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Trevor/documents/marketplace2/Consensys-Marketplace-Final-Project-master/contracts/upgrades/SharedStorage.sol",
+    "exportedSymbols": {
+      "SharedStorage": [
+        1905
+      ]
+    },
+    "id": 1906,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1902,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:19"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title SharedStorage\n@dev base contract holding address of the contract implementation\n@notice ideas and concepts derived from https://medium.com/limechain/smart-contract-upgradeability-ee3d43dde96c",
+        "fullyImplemented": true,
+        "id": 1905,
+        "linearizedBaseContracts": [
+          1905
+        ],
+        "name": "SharedStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1904,
+            "name": "contractImplementation",
+            "nodeType": "VariableDeclaration",
+            "scope": 1905,
+            "src": "268:37:19",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1903,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "268:7:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1906,
+        "src": "242:66:19"
+      }
+    ],
+    "src": "0:309:19"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.0",
+  "updatedAt": "2019-01-24T18:58:43.094Z",
+  "devdoc": {
+    "methods": {},
+    "title": "SharedStorage"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
