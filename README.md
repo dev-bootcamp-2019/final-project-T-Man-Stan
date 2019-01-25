@@ -7,8 +7,8 @@ Please note that I started this project during the first (most recent) Consensys
 ### Contract has been deployed on the Rinkeby network: [0xb42d3214eec65d3e6a6257a778823ad093cbd7fd](https://rinkeby.etherscan.io/address/0xb42d3214eec65d3e6a6257a778823ad093cbd7fd#code)
 
 ### Steps to run the project 
-  - Global dependencies
-    - **IPFS** (Please run the following commands also):
+  - Global dependencies: 
+    - **IPFS** (Please install Go if you don't already have it and add it to your path; Also run the following commands):
       - Download [link](https://dist.ipfs.io/#go-ipfs)
       - `ipfs init`
       - `ipfs config Addresses.API /ip4/127.0.0.1/tcp/5001`
@@ -17,7 +17,9 @@ Please note that I started this project during the first (most recent) Consensys
       - `ipfs daemon`
       
     - or you may install ipfs by:
-    
+      - Download [link](https://dist.ipfs.io/#go-ipfs)
+      - ipfs init
+      - copy the ipfs cat link and paste it into your directory
     
     
     - Node.js:
