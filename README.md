@@ -49,6 +49,9 @@ Please note that I started this project during the first (most recent) Consensys
     - See Travis build
     - Start ganache-cli with the following command:
       - `ganache-cli --allowUnlimitedContractSize -l 8000000 -i 42 -m "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"`
+      
+    - Note, if you get 'Error: Returned values aren't valid, did it run Out of Gas?' then run truffle migrate --reset --all
+      
     - In the `/final-project-T-Man-Stan-master/` folder run `truffle Testing`
     - To run coverage:
       - In the `/final-project-T-Man-Stan-master/` folder run `./node_modules/.bin/solidity-coverage`
