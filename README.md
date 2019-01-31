@@ -2,6 +2,9 @@
 
 ### Final course project for the "ConsenSys Academy" Developers Program 2018-2019.
 
+Link to video walkthrough: https://drive.google.com/open?id=1ufB-KabcdlVqfNkXifORP9g7SdcX5xhq
+
+
 Please note that I started this project during the first (most recent) Consensys Academy Course, and as such I'm using solidity 0.4.24 (as is specified in the truffle.js file). Hence, you may need to make sure you have 0.4.24 for truffle
 
 ### Contract has been deployed on the Rinkeby network: [0xb42d3214eec65d3e6a6257a778823ad093cbd7fd](https://rinkeby.etherscan.io/address/0xb42d3214eec65d3e6a6257a778823ad093cbd7fd#code)
