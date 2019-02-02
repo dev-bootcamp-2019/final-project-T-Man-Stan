@@ -55,7 +55,7 @@ Please note that I started this project during the first (most recent) Consensys
       
     - Note, if you get 'Error: Returned values aren't valid, did it run Out of Gas?' then run truffle migrate --reset --all
       
-    - In the `/final-project-T-Man-Stan-master/` folder run `truffle Testing`
+    - In the `/final-project-T-Man-Stan-master/` folder run `truffle Test`
     - To run coverage:
       - In the `/final-project-T-Man-Stan-master/` folder run `./node_modules/.bin/solidity-coverage`
       - For Windows user you may need to run `testrpc-sc` before that locally.
